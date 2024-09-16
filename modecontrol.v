@@ -1,3 +1,4 @@
+`timescale 1ns / 1ps
 module modecontrol(input clk, input reset, input mode, input valid_vote_casted,input [7:0]cand1_vote,input [7:0]cand2_vote,input [7:0]cand3_vote,input [7:0]cand4_vote,input cand1_button_press,input cand2_button_press,input cand3_button_press,input cand4_button_press,output reg [7:0]leds);
    reg[30:0]counter;
   always @(posedge clk)
