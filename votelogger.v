@@ -1,3 +1,4 @@
+`timescale 1ns / 1ps
 module votelogger(input clk, input reset, input mode, input cand1_vote_valid, input cand2_vote_valid, input cand3_vote_valid, input cand4_vote_valid, output reg [7:0] cand1_vote_recvd, output reg [7:0] cand2_vote_recvd, output reg [7:0] cand3_vote_recvd, output reg [7:0] cand4_vote_recvd);
   always @(posedge clk) begin
     if (reset) begin
