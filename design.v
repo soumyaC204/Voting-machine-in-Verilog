@@ -1,26 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 09/16/2024 03:14:35 PM
-// Design Name: 
-// Module Name: design
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
-// Code your design here
-// Code your design here
 module buttoncontrol(input clk,input reset,input button, output reg valid_vote);
   reg[30:0]counter;
   always@(posedge clk)
@@ -58,7 +36,7 @@ module votelogger(input clk, input reset, input mode, input cand1_vote_valid, in
       cand4_vote_recvd <= 0;
     end else begin
       if (cand1_vote_valid & mode == 0)
-        cand1_vote_recvd <= cand1_vote_recvd + 1;  // Update internal register
+        cand1_vote_recvd <= cand1_vote_recvd + 1;  
       if (cand2_vote_valid & mode == 0)
         cand2_vote_recvd <= cand2_vote_recvd + 1;  
       if (cand3_vote_valid & mode == 0)
