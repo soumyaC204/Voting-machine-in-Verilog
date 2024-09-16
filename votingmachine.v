@@ -1,3 +1,4 @@
+`timescale 1ns / 1ps
 module votingmachine(input clk,input reset,input mode,input button1,input button2,input button3,input button4,output[7:0]led);
   wire valid_vote1;
    wire valid_vote2;
